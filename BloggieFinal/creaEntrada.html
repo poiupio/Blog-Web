@@ -1,0 +1,89 @@
+<html>
+            <head lang="es">
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Test
+            </title>
+
+            <link href="css/entradas.css" rel="stylesheet">
+            <style>
+            div { margin-left: 35% ; width: 50% ; text-align : justify;}  
+            textarea { font-size:16px; font-family: "Times New Roman", Times, serif;}
+            </style>
+            </head>
+
+            <body>
+                <nav >
+                    <ul class="nav">
+                        
+                        <li><a class="navbar-brand" href="Index.php">BLOGUIE</a></li>
+                        <li><a class="navbar-content" href="cargarImagenes.php">Media </a></li>
+                        <li><a class="navbar-content" href="about.html">Informacion </a></li>
+                       
+                       
+                    </ul>
+                
+                    <ul class="menu">
+                            <li><a href="#">Menu</a>
+                                    <ul class="submenu">
+                                           
+                                            <li><a class="navbar-content" href="Index.php">Inicio</a></li>
+                                            <li><a class="navbar-content" href="cargarImagenes.php">Media </a></li>
+                                            <li><a class="navbar-content" href="about.html">Informacion </a></li>
+                                           
+                                            
+                                    </ul>
+                            </li>
+                    </ul>
+                
+            </nav>
+            <div>
+					<form action="crearPaginas.php" method="post" enctype="multipart/form-data" class="upload">
+					<h4>Titulo de la entrada</h4><input type="text" name="titulo" value="" placeholder="Titulo"><br>
+                    <textarea name="informacion" rows="20" cols="58" placeholder="Ingresa la informacion de la entrada"></textarea>
+			<p> Selecciona un archivo para subir: </p>
+			<p><input type="file" name="fileToUpload" id="fileToUpload"></p>
+
+			<input type="submit" value="Upload" name="submit">
+			</form>
+		</form>
+
+            </div>
+            <footer id="footer-page" role="contentinfo"><!--Pie de pagina, usado para marcar partes adicionales-->
+            Este artículo es propiedad de Daniel, Gerardo, Roberto, Mauricio y Andres.
+            <a style="float:right;" href="https://www.facebook.com/%22target=" target= "_blank"><img src="https://image.flaticon.com/icons/svg/145/145802.svg" width="35"></a>
+            <a style="float:right;" href="https://mobile.twitter.com/%22target=" target= "_blank"><img src="https://image.flaticon.com/icons/svg/145/145812.svg" width="35"></a>
+            <a style="float:right;" href="https://plus.google.com/discover%22target=" target= "_blank"><img src="https://image.flaticon.com/icons/svg/145/145804.svg" width="35"></a> 
+            <address>
+             Puedes contactarnos a: <a href="mailto: correopagweb@alumnos.uady.mx">correopagweb@alumnos.uady.mx</a>
+            </address>
+            </footer> 
+			<script>
+			function archivo(evt) {
+				var files = evt.target.files; // FileList object
+       
+				//Obtenemos la imagen del campo "file". 
+				for (var i = 0, f; f = files[i]; i++) {         
+				//Solo admitimos imágenes.
+					if (!f.type.match('image.*')) {
+						continue;
+					}
+       
+				var reader = new FileReader();
+           
+				reader.onload = (function(theFile) {
+				return function(e) {
+				// Creamos la imagen.
+                      document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+				};
+				})(f);
+				reader.readAsDataURL(f);
+				}
+			}
+             
+				document.getElementById('files').addEventListener('change', archivo, false);
+				</script>
+				<br> <br> <br> <br> 
+            </body>
+            </html>

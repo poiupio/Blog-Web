@@ -1,0 +1,239 @@
+body
+{
+    background-color: #fcf4cf !important;
+    font-family: Arial;
+    background-image: url("../fonts/oriental.png");
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    margin-bottom: 2em;
+    height: 0;
+}
+
+/*barra de navegacion*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9e624f ;
+	
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-family: Vegur, 'PT Sans', Verdana, Sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #e0ab9a;
+}
+
+/*Cuadro banner*/
+
+.bannermedia{	  
+      
+      padding-bottom: 3em;
+      margin: 3em;
+      background-color: #705d56;
+      
+}
+
+.textbanner{
+    font-family: Courier;
+    font-size: 4em;
+    text-align: center;
+    color: white;	
+}
+
+/*Cuerpo fotos*/
+
+.fotosfont{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20em;
+
+    padding: 4em 2em 4em 2em;
+}
+
+img{
+    max-width: 300px;
+    max-height: 200px;
+    margin-right: 0.75em;
+    margin-left: 1.8em;
+    margin-bottom: 1em;	  
+   
+	
+}
+
+.contenidoEntrada{
+	font-family: Courier;
+	text-align: justify;
+
+	
+	margin-right: 5em;
+	
+}
+
+
+/*pie de pagina*/
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #9e624f;
+   color: white;
+   text-align: center;
+   font-family: Vegur, 'PT Sans', Verdana, Sans-serif;
+}
+
+
+.jumbotron{
+    margin-left: 10%;
+    margin-bottom: 2em;
+    padding-left: 2em;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    border-radius: 10px;
+    width: 80%; 
+    background-color: #d6907a;
+    color: black; 
+    font-size:30px;
+    font-weight:200;
+}
+
+.navbar-brand:link , .navbar-brand:visited{
+    font-size: 2em;
+    color:black !important;
+}
+nav{
+    
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.navbar-content{
+    margin-top: 10px; 
+}
+.navbar-brand:hover, .navbar-brand:active{
+    color: #3670a5 !important;
+}
+
+.navbar{
+    border-radius: 10px;
+    display:none;
+    background-color: #d4d4d4 !important;
+}
+
+.menu{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 400px){
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+    
+    .nav{
+        display: none;
+    }
+   
+    .menu{
+        visibility: visible;
+        text-align: center;
+    }
+    .submenu{
+        position: absolute;
+        background: #333333;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1.5s;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+    
+    .jumbotron{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .h1jumbo{
+        font-size: 80%;
+        text-align: center;
+    }
+    
+    #borrar, #logoUady, .block{ 
+        display: none;
+        visibility: hidden;
+    }
+    
+    .bannerbloggie{
+        padding:2%;
+    }
+    
+    .fotosfont{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    
+    
+    .mediaImg{
+        width: 90%;
+    }
+    
+    
+img{
+    max-width: 300px;
+    max-height: 200px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 1em;	  
+}
+    
+#formu{
+    padding-top: 5%;
+    width: 70%;
+    height: 180px;
+}
+
+.entradas, .block2{
+    margin: 0px;
+    float: top;
+    width: 90% !important;
+}
+
+footer > a{
+    
+    float: none;
+}
+
+}

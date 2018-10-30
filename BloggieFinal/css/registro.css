@@ -1,0 +1,150 @@
+body
+{
+margin : auto;
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+margin-bottom: 2em;
+height: 0;
+}
+
+.formulario
+{
+text-align: center;
+	
+font-family: Arial;
+width: 20em;
+height: 25em;
+
+margin-top: 3%;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 15%;
+
+padding-top: 2em;
+padding-bottom: 2em;
+padding-left: 1em; 
+padding-right: 1em;
+
+border-style: solid;	
+border-width: 2px;
+box-shadow: 10px 10px;
+background-color: rgba(139, 69, 19,.6);
+border-style: groove;
+border-radius: 15px;
+}
+
+h4
+{
+	
+margin-bottom: 1em;
+	
+}
+
+.navbar-brand:link , .navbar-brand:visited{
+    font-size: 2em;
+    color:black !important;
+}
+
+.tools{
+    margin:0;
+    margin-top: 2em;
+    margin-bottom: 20;
+}
+
+nav{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9e624f ;
+}
+
+.navbar-content{
+    margin-top: 10px; 
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-family: Vegur, 'PT Sans', Verdana, Sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.container{
+    display: block;
+    border: #d6907a 3px solid;
+    padding-bottom: 1em;
+    border-radius: 10px;
+    height: 100px;
+    margin-left: 2%;
+    background-color: #e2d698;
+}
+
+.entradas{
+    margin-top: 2.7%;
+    border: #d6907a 3px solid;
+    padding-bottom: 1em;
+    border-radius: 10px;
+    margin-left: 3%;
+    width: 75%;
+    height: 50em;
+    background-color: #f4c5a8 opacity;
+}
+
+.navbar-default{
+    background-color:#e6846480;
+    border-color:#e7e7e7;
+}
+
+.navbar-brand:hover, .navbar-brand:active{
+    color: #3670a5 !important;
+}
+
+.navbar{
+    border-radius: 10px;
+    display:none;
+    background-color: #d4d4d4 !important;
+}
+
+ul li a{
+    color: black
+}
+
+.panel-body{
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.left-content{
+   width: 20%;
+}
+
+.block{
+    float:left;
+}
+
+footer {
+   text-align: right;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #9e624f;
+   color: white;
+   text-align: center;
+   font-family: Vegur, 'PT Sans', Verdana, Sans-serif;
+}

@@ -1,0 +1,133 @@
+/* 
+    Created on : 27/07/2018, 02:58:03 PM
+    Author     : Daniel Rosales Contreras
+*/
+
+body{
+    background-color: #fcf4cf !important;
+    font-family: Arial;
+    background-image: url("../fonts/oriental.png"); position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    margin-bottom: 2em;
+    height: 0;
+}
+
+.jumbotron{
+    margin-bottom: 2em;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    border-radius: 10px;
+    background-color: #d6907a;
+    color: black; 
+    font-size:30px;
+    font-weight:200;
+}
+
+.panel-heading{
+    padding-left: 1em;
+    background-color: #e6846480 !important;
+}
+
+.navbar-brand:link , .navbar-brand:visited{
+    font-size: 2em;
+    color:black !important;
+}
+
+.tools{
+    margin:0;
+    margin-top: 2em;
+    margin-bottom: 20;
+}
+
+nav{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9e624f ;
+}
+
+.navbar-content{
+    margin-top: 10px; 
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-family: Vegur, 'PT Sans', Verdana, Sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.container{
+    display: block;
+    border: #d6907a 3px solid;
+    padding-bottom: 1em;
+    border-radius: 10px;
+    height: 100px;
+    margin-left: 2%;
+    background-color: #e2d698;
+}
+
+.entradas{
+    margin-top: 2.7%;
+    border: #d6907a 3px solid;
+    padding-bottom: 1em;
+    border-radius: 10px;
+    margin-left: 3%;
+    width: 75%;
+    height: 50em;
+    background-color: #f4c5a8 opacity;
+}
+
+.navbar-default{
+    background-color:#e6846480;
+    border-color:#e7e7e7;
+}
+
+.navbar-brand:hover, .navbar-brand:active{
+    color: #3670a5 !important;
+}
+
+.navbar{
+    border-radius: 10px;
+    display:none;
+    background-color: #d4d4d4 !important;
+}
+
+ul li a{
+    color: black
+}
+
+.panel-body{
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.left-content{
+   width: 20%;
+}
+
+.block, .block2{
+    float:left;
+}
+
+/*
+:link
+:visited
+:hover
+:active
+*/

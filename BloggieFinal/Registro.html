@@ -1,0 +1,75 @@
+<html>
+<head>
+<script language="javascript">
+
+function hideOrShowPassword() {
+  var password1, password2, check;
+
+  password1 = document.getElementById("contraseña");
+  password2 = document.getElementById("confirmarContraseña");
+  check = document.getElementById("ver");
+
+  if (check.checked == true) // Si la checkbox de mostrar contraseña está activada
+  {
+    password1.type = "text";
+    password2.type = "text";
+  } else // Si no está activada 
+  {
+    password1.type = "password";
+    password2.type = "password";
+  }
+}
+</script>
+<meta charset="UTF-8">
+<link href="css/media.css" rel="stylesheet">
+ <link href="css/registro.css" rel="stylesheet">
+</head>
+<body>
+        <nav >
+                <ul class="nav">
+                    <li><a class="navbar-brand" href="Index.php">BLOGUIE</a></li>
+                    <li><a class="navbar-content" href="cargarImagenes.php">Media </a></li>
+                    <li><a class="navbar-content" href="about.html">Informacion </a></li>
+                    <li><a class="navbar-content" href="PR4.html">Iniciar sesion</a></li>
+                </ul>
+            
+                <ul class="menu">
+                        <li><a href="#">Menu</a>
+                                <ul class="submenu">
+                                        <li><a class="navbar-content" href="Index.php">Inicio</a></li>
+                                        <li><a class="navbar-content" href="cargarImagenes.php">Media </a></li>
+                                        <li><a class="navbar-content" href="about.html">Informacion </a></li>
+                                        <li><a class="navbar-content" href="PR4.html">Iniciar sesion</a></li>
+                                </ul>
+                        </li>
+                </ul>
+            
+        </nav>
+
+<form  method="post" name="formu" id="formu" class="formulario" action="validarRegistro.php" autocomplete="off">
+      <h4>Correo:</h4><input type="text" name="correo" value="" placeholder="Correo"><br>
+	  <h4>Usuario:</h4><input type="text" name="usuario" value="" placeholder="Usuario"><br>
+      <h4>Contraseña:</h4><input type="password" name="contraseña" value="" placeholder="Contraseña" id="contraseña"><br>
+	  <h4>Confirmar contraseña:</h4><input type="password" name="Confirmarcontraseña" value="" id= "confirmarContraseña" placeholder="Confirmar contraseña"><br>
+	  <small>
+		<input type="checkbox" id="ver" class="ver" onChange="hideOrShowPassword()" />
+		<label class="text">Mostrar contraseña</label>
+	  </small>
+	  <div class="cuadroCaptcha">
+		<h4><input type="radio" name="transporte" value="3">No soy un robot.</h4>
+	  </div>
+	  
+              <br><input type="submit" value="   Enviar   ">
+</form>
+ <footer id="footer-page" role="contentinfo"><!--Pie de pagina, usado para marcar partes adicionales-->
+      <a style="float:right;" href="https://www.facebook.com/" target=”_blank”><img src="https://image.flaticon.com/icons/svg/145/145802.svg" width="35"></a>      
+      <a style="float:right;" href="https://mobile.twitter.com/" target=”_blank”><img src="https://image.flaticon.com/icons/svg/145/145812.svg" width="35"></a>
+      <a style="float:right;" href="https://plus.google.com/discover" target=”_blank”><img src="https://image.flaticon.com/icons/svg/145/145804.svg" width="35"></a> 
+      
+      <div id="borrar">
+       Este artículo es propiedad de Daniel, Gerardo, Roberto, Mauricio y Andres.
+       Puedes contactarnos a: <a href="mailto: correopagweb@alumnos.uady.mx">correopagweb@alumnos.uady.mx</a>
+      </div>
+  </footer> 
+</body>
+</html>

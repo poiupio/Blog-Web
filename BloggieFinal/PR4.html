@@ -1,0 +1,45 @@
+﻿<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/media.css" rel="stylesheet">
+ <link href="css/login.css" rel="stylesheet">
+</head>
+<body>
+        <nav >
+                <ul class="nav">
+                    <li><a class="navbar-brand" href="Index.php">BLOGUIE</a></li>
+                    <li><a class="navbar-content" href="cargarImagenes.php">Media </a></li>
+                    <li><a class="navbar-content" href="about.html">Informacion </a></li>
+                    <li><a class="navbar-content" href="Registro.html">Registrarse</a></li>
+                </ul>
+            
+                <ul class="menu">
+                        <li><a href="#">Menu</a>
+                                <ul class="submenu">
+                                        <li><a class="navbar-content" href="Index.php">Inicio</a></li>
+                                        <li><a class="navbar-content" href="cargarImagenes.php">Media </a></li>
+                                        <li><a class="navbar-content" href="about.html">Informacion </a></li>
+                                        <li><a class="navbar-content" href="Registro.html">Registrarse</a></li>
+                                </ul>
+                        </li>
+                </ul>
+            
+        </nav>
+<form  method="post" name="formu" id="formu" class="formulario"
+      action="validarDatos.php" autocomplete="off">
+   <h4>Usuario:</h4> <input type="text" name="nombre" value=""><br>
+   <h4>Contraseña:</h4>   <input type="password" name="contraseña" value=""><br>
+              <br><input type="submit" value="   Enviar   ">
+</form>
+ <footer id="footer-page" role="contentinfo"><!--Pie de pagina, usado para marcar partes adicionales-->
+      <a style="float:right;" href="https://www.facebook.com/" target=”_blank”><img src="https://image.flaticon.com/icons/svg/145/145802.svg" width="35"></a>      
+      <a style="float:right;" href="https://mobile.twitter.com/" target=”_blank”><img src="https://image.flaticon.com/icons/svg/145/145812.svg" width="35"></a>
+      <a style="float:right;" href="https://plus.google.com/discover" target=”_blank”><img src="https://image.flaticon.com/icons/svg/145/145804.svg" width="35"></a> 
+      
+      <div id="borrar">
+       Este artículo es propiedad de Daniel, Gerardo, Roberto, Mauricio y Andres.
+       Puedes contactarnos a: <a href="mailto: correopagweb@alumnos.uady.mx">correopagweb@alumnos.uady.mx</a>
+      </div>
+  </footer> 
+</body>
+</html>
